@@ -1,0 +1,1760 @@
+/* =========================================
+   DOBU MARTIAL ARTS
+   CUSTOM WEBSITE CSS
+   Shared Stylesheet
+========================================= */
+
+
+/* =========================================
+   GENERAL
+========================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+
+    margin: 0;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    color: #171717;
+
+    background: #ffffff;
+
+    line-height: 1.6;
+
+}
+
+
+img {
+
+    max-width: 100%;
+
+    height: auto;
+
+}
+
+
+a {
+
+    transition: 0.2s ease;
+
+}
+
+
+
+/* =========================================
+   NAVIGATION
+========================================= */
+
+.dobu-navbar {
+
+    min-height: 78px;
+
+    background: #111111;
+
+    padding: 0;
+
+}
+
+
+.dobu-navbar .container {
+
+    min-height: 78px;
+
+}
+
+
+.dobu-logo {
+
+    font-size: 28px;
+
+    font-weight: 900;
+
+    letter-spacing: -1px;
+
+}
+
+
+.dobu-logo span {
+
+    color: #d4382d;
+
+}
+
+
+.navbar-nav {
+
+    gap: 18px;
+
+}
+
+
+.nav-link {
+
+    color: #dddddd !important;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    padding-top: 10px !important;
+
+    padding-bottom: 10px !important;
+
+}
+
+
+.nav-link:hover {
+
+    color: #e44437 !important;
+
+}
+
+
+.nav-link.active {
+
+    color: #e44437 !important;
+
+}
+
+
+/* Bootstrap mobile menu button */
+
+.navbar-toggler {
+
+    border-color: rgba(255,255,255,0.35);
+
+}
+
+
+.navbar-toggler:focus {
+
+    box-shadow:
+        0 0 0 3px rgba(207,58,47,0.25);
+
+}
+
+
+/* Make Bootstrap toggler icon visible on dark navbar */
+
+.navbar-dark .navbar-toggler-icon {
+
+    filter: brightness(0) invert(1);
+
+}
+
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.hero-section {
+
+    position: relative;
+
+    min-height: 620px;
+
+    display: flex;
+
+    align-items: center;
+
+    color: white;
+
+    background:
+
+        linear-gradient(
+            90deg,
+            rgba(0,0,0,0.86),
+            rgba(0,0,0,0.40)
+        ),
+
+        linear-gradient(
+            135deg,
+            #111111,
+            #29150f,
+            #602817
+        );
+
+}
+
+
+.hero-overlay {
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+
+        radial-gradient(
+            circle at 70% 50%,
+            rgba(190,65,40,0.35),
+            transparent 45%
+        );
+
+}
+
+
+.hero-content {
+
+    position: relative;
+
+    z-index: 2;
+
+    max-width: 680px;
+
+}
+
+
+.hero-small-title {
+
+    color: #ef5548;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+    font-size: 13px;
+
+    margin-bottom: 18px;
+
+}
+
+
+.hero-content h1 {
+
+    font-size: clamp(48px, 7vw, 78px);
+
+    line-height: 0.98;
+
+    font-weight: 900;
+
+    margin-bottom: 25px;
+
+}
+
+
+.hero-description {
+
+    max-width: 560px;
+
+    color: #dddddd;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+
+}
+
+
+.hero-buttons {
+
+    display: flex;
+
+    gap: 12px;
+
+    margin-top: 30px;
+
+    flex-wrap: wrap;
+
+}
+
+
+.main-button {
+
+    background: #ce3b30;
+
+    border: none;
+
+    padding: 14px 25px;
+
+    font-weight: 800;
+
+}
+
+
+.main-button:hover {
+
+    background: #a92e25;
+
+}
+
+
+.account-button {
+
+    color: white;
+
+    border: 1px solid rgba(255,255,255,0.5);
+
+    padding: 14px 25px;
+
+    font-weight: 700;
+
+}
+
+
+.account-button:hover {
+
+    background: white;
+
+    color: #111111;
+
+}
+
+
+
+/* =========================================
+   GENERAL SECTIONS
+========================================= */
+
+.martial-section {
+
+    padding: 90px 0;
+
+    background: #ffffff;
+
+}
+
+
+.membership-section {
+
+    padding: 90px 0;
+
+    background: #f7f7f7;
+
+}
+
+
+.section-heading {
+
+    text-align: center;
+
+    max-width: 650px;
+
+    margin: 0 auto 45px;
+
+}
+
+
+.section-small-title {
+
+    color: #cf3a2f;
+
+    font-size: 13px;
+
+    font-weight: 900;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 8px;
+
+}
+
+
+.section-heading h2 {
+
+    font-size: 42px;
+
+    font-weight: 900;
+
+    margin-bottom: 12px;
+
+    line-height: 1.15;
+
+}
+
+
+.section-heading > p:last-child {
+
+    color: #777777;
+
+    line-height: 1.7;
+
+}
+
+
+
+/* =========================================
+   MARTIAL ARTS CARDS
+========================================= */
+.martial-card {
+
+    height: 100%;
+
+    padding: 30px;
+
+    border: 1px solid #e5e5e5;
+
+    border-radius: 12px;
+
+    background: #ffffff;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+
+}
+
+
+.martial-card:hover {
+
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 15px 40px rgba(0,0,0,0.08);
+
+}
+
+
+.martial-card h3 {
+
+    font-weight: 800;
+
+    margin-bottom: 12px;
+
+}
+
+
+.martial-card p {
+
+    color: #777777;
+
+    line-height: 1.7;
+
+}
+
+
+.martial-card strong {
+
+    display: block;
+
+    margin-top: 15px;
+
+    font-size: 16px;
+
+}
+
+
+
+/* =========================================
+   MARTIAL ARTS ICON
+========================================= */
+
+.martial-icon {
+
+    width: 52px;
+
+    height: 52px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 12px;
+
+    background: #fff0ee;
+
+    font-size: 25px;
+
+    margin-bottom: 20px;
+
+}
+
+
+
+/* =========================================
+   MEMBERSHIP CARDS
+========================================= */
+
+.membership-card {
+
+    height: 100%;
+
+    padding: 35px 25px;
+
+    background: #ffffff;
+
+    border: 1px solid #e5e5e5;
+
+    border-radius: 12px;
+
+    text-align: center;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+
+}
+
+
+.membership-card:hover {
+
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 15px 40px rgba(0,0,0,0.08);
+
+}
+
+
+.membership-card h3 {
+
+    margin-bottom: 20px;
+
+    font-weight: 800;
+
+}
+
+
+.membership-card p {
+
+    color: #777777;
+
+    line-height: 1.6;
+
+}
+
+
+.membership-card ul {
+
+    margin-top: 20px;
+
+    margin-bottom: 25px;
+
+    padding-left: 20px;
+
+    text-align: left;
+
+}
+
+
+.membership-card li {
+
+    margin-bottom: 10px;
+
+}
+
+
+.membership-price {
+
+    font-size: 40px;
+
+    font-weight: 900;
+
+    margin: 18px 0;
+
+}
+
+
+.membership-price span {
+
+    font-size: 13px;
+
+    color: #777777;
+
+    font-weight: normal;
+
+}
+
+
+.membership-button {
+
+    width: 100%;
+
+    margin-top: 15px;
+
+    padding: 12px;
+
+    background: #cf3a2f;
+
+    border: none;
+
+    font-weight: 800;
+
+}
+
+
+.membership-button:hover {
+
+    background: #ac2f27;
+
+}
+
+
+
+/* =========================================
+   TIMETABLE
+========================================= */
+
+.table-responsive {
+
+    overflow-x: auto;
+
+    -webkit-overflow-scrolling: touch;
+
+}
+
+
+.timetable-table {
+
+    min-width: 1000px;
+
+    margin-top: 30px;
+
+    background: #ffffff;
+
+    border-collapse: collapse;
+
+}
+
+
+.timetable-table th,
+.timetable-table td {
+
+    min-width: 130px;
+
+    padding: 16px 14px;
+
+    text-align: center;
+
+    vertical-align: middle;
+
+    border: 1px solid #dddddd;
+
+}
+
+
+.timetable-table thead th {
+
+    background: #111111;
+
+    color: #ffffff;
+
+    font-weight: 700;
+
+}
+
+
+.timetable-table tbody th {
+
+    background: #f5f5f5;
+
+    font-weight: 700;
+
+}
+
+
+.timetable-table tbody td {
+
+    background: #ffffff;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+
+}
+
+
+.timetable-table tbody td:empty {
+
+    background: #f7f7f7;
+
+}
+
+
+.timetable-table tbody tr:hover td {
+
+    background: #f8f8f8;
+
+}
+
+
+.timetable-table tbody tr:hover th {
+
+    background: #eeeeee;
+
+}
+
+
+
+/* =========================================
+   ACCOUNT PAGE
+========================================= */
+
+.account-card {
+
+    height: 100%;
+
+    padding: 35px;
+
+    background: #ffffff;
+
+    border: 1px solid #e5e5e5;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 8px 25px rgba(0,0,0,0.06);
+
+}
+
+
+.account-card h3 {
+
+    margin-bottom: 10px;
+
+    font-weight: 700;
+
+}
+
+
+.account-card p {
+
+    margin-bottom: 25px;
+
+}
+
+
+.account-message {
+
+    min-height: 24px;
+
+    font-weight: 600;
+
+}
+
+
+.member-dashboard {
+
+    padding: 40px;
+
+    background: #f5f5f5;
+
+    border-radius: 10px;
+
+}
+
+
+.dashboard-header {
+
+    margin-bottom: 25px;
+
+}
+
+
+.dashboard-card {
+
+    height: 100%;
+
+    padding: 25px;
+
+    background: #ffffff;
+
+    border-radius: 8px;
+
+    border: 1px solid #e5e5e5;
+
+}
+
+
+.dashboard-card h4 {
+
+    margin-bottom: 15px;
+
+    font-weight: 700;
+
+}
+
+
+.dashboard-card strong {
+
+    font-size: 18px;
+
+}
+
+
+.dashboard-actions {
+
+    display: flex;
+    gap: 12px;
+
+    flex-wrap: wrap;
+
+}
+
+
+
+/* =========================================
+   FORM ELEMENTS
+========================================= */
+
+.form-group {
+
+    margin-bottom: 18px;
+
+}
+
+
+.form-group label {
+
+    display: block;
+
+    font-weight: 700;
+
+    font-size: 14px;
+
+    margin-bottom: 7px;
+
+}
+
+
+.form-control {
+
+    min-height: 48px;
+
+    background: #f8f8fa;
+
+    border: 1px solid #dedede;
+
+    border-radius: 9px;
+
+}
+
+
+.form-control:focus {
+
+    border-color: #cf3a2f;
+
+    box-shadow:
+        0 0 0 3px rgba(207,58,47,0.12);
+
+}
+
+
+textarea.form-control {
+
+    min-height: 130px;
+
+    resize: vertical;
+
+}
+
+
+
+/* =========================================
+   ACCOUNT MODAL
+========================================= */
+
+.account-modal {
+
+    position: relative;
+
+    border: none;
+
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 25px 70px rgba(0,0,0,0.35);
+
+}
+
+
+.modal-body {
+
+    padding: 35px 36px 30px;
+
+}
+
+
+.modal-close {
+
+    position: absolute;
+
+    top: 13px;
+
+    right: 17px;
+
+    border: none;
+
+    background: transparent;
+
+    color: #777777;
+
+    font-size: 29px;
+
+    cursor: pointer;
+
+    z-index: 5;
+
+}
+
+
+.modal-close:hover {
+
+    color: #111111;
+
+}
+
+
+.account-title {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+}
+
+
+.account-title h2 {
+
+    font-size: 28px;
+
+    font-weight: 900;
+
+    margin: 0;
+
+}
+
+
+.account-icon {
+
+    color: #cc3b30;
+
+    font-size: 25px;
+
+}
+
+
+.account-subtitle {
+
+    color: #777777;
+
+    font-size: 14px;
+
+    margin-top: 12px;
+
+    margin-bottom: 25px;
+
+}
+
+
+.register-button {
+
+    width: 100%;
+
+    height: 49px;
+
+    border: none;
+
+    border-radius: 25px;
+
+    background: #cf3a2f;
+
+    color: white;
+
+    font-weight: 900;
+
+    letter-spacing: 0.5px;
+
+    margin-top: 4px;
+
+}
+
+
+.register-button:hover {
+
+    background: #ac2f27;
+
+}
+
+
+.login-text {
+
+    text-align: center;
+
+    color: #888888;
+
+    font-size: 14px;
+
+    margin-top: 18px;
+
+    margin-bottom: 0;
+
+}
+
+
+.login-text a {
+
+    color: #cf3a2f;
+
+    font-weight: 800;
+
+    text-decoration: none;
+
+}
+
+
+.password-error {
+
+    color: #c0392b;
+
+    font-size: 13px;
+
+    margin-bottom: 10px;
+
+}
+
+
+
+/* =========================================
+   COMMUNITY FORUM
+========================================= */
+
+.forum-card {
+
+    padding: 35px;
+
+    background: #ffffff;
+
+    border: 1px solid #e5e5e5;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 8px 25px rgba(0,0,0,0.06);
+
+}
+
+
+.forum-card h3 {
+
+    font-weight: 700;
+
+    margin-bottom: 10px;
+
+}
+
+
+.forum-post {
+
+    padding: 25px;
+
+    margin-bottom: 20px;
+
+    background: #ffffff;
+
+    border: 1px solid #e5e5e5;
+
+    border-radius: 10px;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+
+}
+
+
+.forum-post:hover {
+
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 8px 20px rgba(0,0,0,0.08);
+
+}
+
+
+.forum-post h4 {
+
+    font-weight: 700;
+
+    margin-bottom: 5px;
+
+}
+
+
+.forum-post p {
+
+    margin-top: 15px;
+
+    margin-bottom: 15px;
+
+}
+
+
+.forum-post-header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 15px;
+
+}
+
+
+.forum-tag {
+
+    display: inline-block;
+
+    padding: 5px 12px;
+
+    background: #eeeeee;
+
+    border-radius: 20px;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+}
+
+
+
+/* =========================================
+   INSTRUCTOR PAGE
+========================================= */
+
+.instructor-card {
+
+    height: 100%;
+
+    padding: 30px;
+
+    background: #ffffff;
+
+    border: 1px solid #e5e5e5;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 8px 25px rgba(0,0,0,0.06);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+
+}
+
+
+.instructor-card:hover {
+
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 12px 30px rgba(0,0,0,0.10);
+
+}
+
+
+.instructor-card h3 {
+
+    margin-bottom: 8px;
+
+    font-weight: 700;
+
+}
+
+
+.instructor-role {
+
+    font-weight: 600;
+
+    margin-bottom: 18px;
+
+}
+
+
+.instructor-card ul {
+
+    padding-left: 20px;
+
+    margin-bottom: 0;
+
+}
+
+
+.instructor-card li {
+
+    margin-bottom: 8px;
+
+}
+.instructor-section-title {
+
+    margin-top: 60px;
+
+}
+
+
+
+/* =========================================
+   CONTACT PAGE
+========================================= */
+
+.contact-card {
+
+    height: 100%;
+
+    padding: 35px;
+
+    background: #ffffff;
+
+    border: 1px solid #e5e5e5;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 8px 25px rgba(0,0,0,0.06);
+
+}
+
+
+.contact-card h3 {
+
+    font-weight: 800;
+
+    margin-bottom: 12px;
+
+}
+
+
+.contact-card h4 {
+
+    font-size: 17px;
+
+    font-weight: 700;
+
+    margin-top: 20px;
+
+    margin-bottom: 8px;
+
+}
+
+
+.contact-card p {
+
+    color: #777777;
+
+    line-height: 1.7;
+
+}
+
+
+.contact-info {
+
+    margin-bottom: 22px;
+
+}
+
+
+.contact-info strong {
+
+    color: #171717;
+
+}
+
+
+.contact-button {
+
+    width: 100%;
+
+    background: #cf3a2f;
+
+    border: none;
+
+    color: #ffffff;
+
+    font-weight: 800;
+
+    padding: 13px 20px;
+
+}
+
+
+.contact-button:hover {
+
+    background: #ac2f27;
+
+}
+
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.footer {
+
+    background: #111111;
+
+    color: white;
+
+    padding: 60px 0 20px;
+
+}
+
+
+.footer h3 {
+
+    font-weight: 900;
+
+}
+
+
+.footer h4 {
+
+    font-size: 16px;
+
+    margin-bottom: 18px;
+
+}
+
+
+.footer p {
+
+    color: #aaaaaa;
+
+    line-height: 1.8;
+
+}
+
+
+.footer a {
+
+    display: block;
+
+    color: #aaaaaa;
+
+    text-decoration: none;
+
+    margin-bottom: 8px;
+
+}
+
+
+.footer a:hover {
+
+    color: #e44437;
+
+}
+
+
+.footer-bottom {
+
+    border-top: 1px solid #2c2c2c;
+
+    margin-top: 35px;
+
+    padding-top: 20px;
+
+    color: #777777;
+
+    text-align: center;
+
+    font-size: 13px;
+
+}
+
+
+.footer-bottom p {
+
+    margin-bottom: 0;
+
+}
+
+
+
+/* =========================================
+   BUTTON CONSISTENCY
+========================================= */
+
+.btn {
+
+    border-radius: 6px;
+
+}
+
+
+.btn:focus {
+
+    box-shadow:
+        0 0 0 3px rgba(207,58,47,0.15);
+
+}
+
+
+.btn-outline-dark:hover {
+
+    background: #111111;
+
+    border-color: #111111;
+
+}
+
+
+
+/* =========================================
+   RESPONSIVE DESIGN
+========================================= */
+
+@media (max-width: 991px) {
+
+    .navbar-nav {
+
+        gap: 4px;
+
+        padding-top: 12px;
+
+        padding-bottom: 12px;
+
+    }
+
+
+    .nav-link {
+
+        padding-left: 8px !important;
+
+        padding-right: 8px !important;
+
+    }
+
+}
+
+
+@media (max-width: 768px) {
+
+    .dobu-navbar {
+
+        min-height: 70px;
+
+    }
+
+
+    .dobu-navbar .container {
+
+        min-height: 70px;
+
+    }
+
+
+    .hero-section {
+
+        min-height: 560px;
+
+    }
+
+
+    .hero-content h1 {
+
+        font-size: 50px;
+
+    }
+
+
+    .section-heading h2 {
+
+        font-size: 34px;
+
+    }
+
+
+    .modal-body {
+
+        padding: 30px 22px 25px;
+
+    }
+
+
+    .timetable-table {
+
+        min-width: 950px;
+
+    }
+
+
+    .timetable-table th,
+    .timetable-table td {
+
+        padding: 12px 10px;
+
+        font-size: 13px;
+
+    }
+
+
+    .account-card {
+
+        padding: 25px;
+
+    }
+
+
+    .member-dashboard {
+
+        padding: 25px;
+
+    }
+
+
+    .forum-card {
+
+        padding: 25px;
+
+    }
+
+
+    .forum-post {
+
+        padding: 20px;
+
+    }
+
+
+    .instructor-card {
+
+        padding: 22px;
+
+    }
+
+
+    .instructor-section-title {
+
+        margin-top: 40px;
+
+    }
+
+
+    .contact-card {
+
+        padding: 25px;
+
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .hero-content h1 {
+
+        font-size: 42px;
+
+    }
+
+
+    .hero-description {
+
+        font-size: 16px;
+
+    }
+
+
+    .hero-buttons {
+
+        width: 100%;
+
+    }
+
+
+    .hero-buttons .btn {
+
+        width: 100%;
+
+    }
+
+
+    .section-heading h2 {
+
+        font-size: 30px;
+
+    }
+
+
+    .martial-section,
+    .membership-section {
+
+        padding: 65px 0;
+
+    }
+
+
+    .footer {
+
+        padding-top: 45px;
+
+    }
+
+
+    .forum-post-header {
+
+        align-items: flex-start;
+
+        flex-direction: column;
+
+    }
+
+}
+
+/* =========================================
+   RESPONSIVE DESIGN
+   ========================================= */
+
+/* Tablet */
+@media (max-width: 991px) {
+
+    .navbar-nav {
+        text-align: center;
+        padding-top: 15px;
+    }
+
+    .navbar-nav .nav-link {
+        padding: 10px 0;
+    }
+
+    .hero {
+        min-height: 650px;
+    }
+
+    .hero-content {
+        text-align: center;
+    }
+
+    .hero-content h1 {
+        font-size: 55px;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .martial-grid,
+    .membership-grid,
+    .instructor-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* Mobile */
+@media (max-width: 767px) {
+
+    .hero {
+        min-height: 600px;
+        padding: 100px 20px 60px;
+    }
+
+    .hero-content h1 {
+        font-size: 42px;
+        line-height: 1.1;
+    }
+
+    .hero-description {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .hero-buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        width: 100%;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+    }
+
+    .section-heading h2 {
+        font-size: 32px;
+    }
+
+    .martial-grid,
+    .membership-grid,
+    .instructor-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .footer-bottom {
+        text-align: center;
+    }
+
+    .table-responsive {
+        overflow-x: auto;
+    }
+
+    .account-card,
+    .forum-card {
+        padding: 20px;
+    }
+}
+
+
+/* Small Mobile */
+@media (max-width: 480px) {
+
+    .hero-content h1 {
+        font-size: 36px;
+    }
+
+    .hero-description {
+        font-size: 15px;
+    }
+
+    .section-heading h2 {
+        font-size: 28px;
+    }
+
+    .martial-section,
+    .membership-section {
+        padding: 55px 0;
+    }
+
+    .footer {
+        padding-top: 40px;
+    }
+
+    .forum-post-header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
+/* Instructor Images */
+.instructor-image {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 20px;
+}
